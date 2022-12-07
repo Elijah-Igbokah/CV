@@ -117,6 +117,7 @@ header > .container{
 .profile-info{
     width: 40%;
     display: flex;
+    flex-direction: row;
     gap: 50px;
     
 }
@@ -471,6 +472,67 @@ progress{
 
     .profile-info{
         width: 80%;
+        flex-direction: column;
+    }
+
+    .about > .flex-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-text{
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    .about-image{
+        width: 350px;
+        height: 350px;
+    }
+
+
+    .skills > .flex-container{
+        padding: 0 0;
+    }
+
+    .skill-grid{
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+
+    .portfolio-flex{
+        margin: 0 0;
+        width: 100%;
+    }
+
+    .about > h1, .skills > h1, .portfolio>h1{
+        margin: 0 0;
+        margin-left: 10%;
+    }
+
+  }
+
+@media screen and (max-width: 512px){
+
+    header> .container{
+        padding-top: 0px;
+    }
+
+
+    .hero{
+        gap: 5%;
+    }
+
+    .profile-info{
+        width: 80%;
+        flex-direction: column-reverse;
+    }
+
+    .socials{
+        width: 80%;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
     .about > .flex-container{
