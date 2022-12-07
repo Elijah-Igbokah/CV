@@ -535,6 +535,11 @@ progress{
         justify-content: flex-start;
     }
 
+    .hero-image{
+        width: 300px;
+        height: 300px;
+    }
+
     .about > .flex-container{
         flex-direction: column;
         justify-content: center;
