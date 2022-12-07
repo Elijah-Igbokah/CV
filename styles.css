@@ -525,8 +525,13 @@ progress{
     }
 
     .profile-info{
-        width: 80%;
+        width: 90%;
         flex-direction: column-reverse;
+    }
+
+    .profile-info > .info > h1{
+        font-size: 48px;
+        letter-spacing: 1.1px;
     }
 
     .socials{
