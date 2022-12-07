@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body{
+    /* overflow-x: hidden; */
+    font-family: 'Mulish', 'Muli', 'sans-serif';
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 30px 0px;
+    margin: 0 120px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    
+}
+
+.nav-logo{
+    width: fit-content;
+    border-left: 2px solid rgb(40,62,92);
+    border-top: 2px solid rgb(40,62,92);
+    padding: 5px;
+}
+.nav-logo>h1{
+    font-size: 20px;
+    text-align: center;
+    color: #4742aa;
+}
+.menu{
+    width: 50%;
+}
+
+.menu-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.menu-list > li > a{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #4742aa;
+    padding: 5px 20px;
+    border-radius: 15px;
+    
+}
+
+.menu-list > li > a:hover{
+    background: #4742aa;
+    color: #fff;
+}
+
+header{
+    background: url("/images/pexels-francesco-ungaro-673648.jpg");
+    background-position: top;
+    background-size: cover;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* z-index: 0; */
+}
+
+header > .container{
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    padding: 100px 0px 0 20px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+    
+}
+
+.hero{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    
+}
+
+.socials{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.profile-info{
+    width: 40%;
+    display: flex;
+    gap: 50px;
+    
+}
+
+.socials > a > img{
+    width: 30px;
+    fill: red;
+    transition: all 0.2s ease-in-out;
+}
+
+.socials > a > img:hover{
+    transform: scale(1.3);
+}
+
+.profile-info > .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.profile-info > .info > h1{
+    font-size: 48px;
+    letter-spacing: 1.2px;
+    color: #4742aa;
+    transition: all 1s ease-in-out;
+}
+
+.profile-info > .info > h1:hover{
+    transform: scale(1.1);
+}
+
+.profile-info > .info > h2{
+    color: #333;   
+}
+
+.hero-image{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    background: url("/images/profile.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 8px solid #4742aa;
+    transition: all 0.5s ease-in-out;
+}
+
+.hero-image:hover{
+    transform: rotate(360deg);
+}
+
+section{
+    background: #C7B9B8;
+}
+
+.about{
+    margin: 0 auto;
+    padding: 70px 0;
+    width: 80%;
+    background: #fff;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* top: 100; */
+    /* bottom: 0; */
+    z-index: 50;
+    border-radius: 50px;
+    
+}
+
+.about > h1, .skills > h1, .portfolio>h1{
+    font-weight: 700;
+    font-size: 32px;
+    color: #333;
+    border-bottom: 4px solid #4742aa;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+
+
+.about-image{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    background: url("/images/IMG_E2650.JPG");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 8px solid #4742aa;
+}
+
+.about-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.about-text > button{
+    cursor: pointer;
+    padding: 20px 30px;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 700;
+    background: #4742aa;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    border: 2px solid #4742aa;
+    transition: all 0.2s ease-in-out;
+}
+
+.about-text > button:hover{
+    background: #fff;
+    color: #4742aa;
+    transform: scale(0.9);
+    
+}
+
+
+.about-text > p{
+    width: 80%;
+    line-height: 24px;
+}
+
+.about > .flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+.skills{
+    margin: 0 auto;
+    padding: 70px 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 51;
+    background: url("/images/pexels-ovan-62693.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.skills>.flex-container{
+    padding: 0 20%;
+}
+
+.skill-grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    text-align: center;
+    grid-column-gap: 50px;
+}
+
+.skill-grid-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    /* margin: 0 auto; */
+}
+
+.skill-grid-column>h2{
+    margin-bottom: 20px;
+}
+
+
+.skill-item{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    cursor: pointer;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.skill-item:hover{
+    transform: scale(1.1);
+}
+
+.skill-item>label{
+    font-weight: 500;
+}
+progress{
+    height: 30px;
+    /* background: #4742aa; */
+}
+
+.portfolio{
+    z-index: 55;
+    position: sticky;
+    top: 0;
+    padding-top: 100px;
+    text-align: center;
+    background: url("/images/pexels-jess-bailey-designs-1097930.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.portfolio-flex{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 100px 0;
+}
+
+
+.portfolio-item{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #4742aa;
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 15px;
+}
+
+.portfolio-item{
+    text-decoration: none;
+    font-style: none;
+}
+
+#kuda{
+    background: url("/images/kuda-bank-logo.png");
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+
+#kuda:hover{
+    transition: all 1s ease-in-out;
+    background-size: 400px 400px;
+}
+
+#paystack{
+    background: url("/images/download.png");
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+
+#paystack:hover{
+    transition: all 1s ease-in-out;
+    background-size: 400px 400px;
+}
+
+#crappo{
+    background: url("/images/crappo.JPG");
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+
+#crappo:hover{
+    transition: all 1s ease-in-out;
+    background-size: 400px 400px;
+}
+
+#delizioso{
+    background: url("/images/getlstd-property-photo.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+
+#delizioso:hover{
+    transition: all 1s ease-in-out;
+    background-size: 400px 400px;
+}
+
+#metabnb{
+    background: url("/images/metabnb.JPG");
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+
+#metabnb:hover{
+    transition: all 1s ease-in-out;
+    background-size: 400px 400px;
+}
+
+
+@media screen and (max-width: 900px) {
+    nav {
+      width: 100%;
+      margin: 0 0;
+      padding-left: 20px;
+      padding-right: 10px;
+    }
+
+    header>.container{
+        width: 90%;
+        padding-left: 0;
+    }
+
+    .about{
+        width: 90%;
+    }
+
+    .about-image{
+        width: 300px;
+        height: 300px;
+    }
+
+    .about>.flex-container{
+        gap: 20px;
+        padding-left: 20px;
+    }
+
+    .skills >.flex-container{
+        padding: 0 10%;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 800px){
+
+    nav{
+        display: none;
+    }
+
+    header{
+        background-position: left;
+    }
+
+    .hero{
+        flex-direction: column;
+    }
+
+    .profile-info{
+        width: 80%;
+    }
+
+    .about > .flex-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-text{
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    .about-image{
+        width: 350px;
+        height: 350px;
+    }
+
+
+    .skills > .flex-container{
+        padding: 0 0;
+    }
+
+    .skill-grid{
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+
+    .portfolio-flex{
+        margin: 0 0;
+        width: 100%;
+    }
+
+    .about > h1, .skills > h1, .portfolio>h1{
+        margin: 0 0;
+        margin-left: 10%;
+    }
+
+  }
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.reveal.activeWindow{
+    transform: translateY(0px);
+    opacity: 1;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elijah Igbokah's Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <h1>Elijah Igbokah</h1>
+      </div>
+      <div class="menu">
+        <ul class="menu-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="hero">
+          <div class="profile-info">
+            <div class="socials">
+              <a href="/"><img src="/images/icons8-github.svg" alt="" /></a>
+              <a href=""
+                ><img src="/images/icons8-linkedin-circled.svg" alt=""
+              /></a>
+              <a href=""><img src="/images/icons8-twitter.svg" alt="" /></a>
+            </div>
+            <div class="info">
+              <h1>Hi! I'm Elijah</h1>
+              <h2>Web developer</h2>
+              <p>
+                A junior developer who is passionate about learning and personal
+                development. Highly goal-driven, organized, and ready to go the
+                extra mile in achieving goals – whether personal or career-wise.
+              </p>
+            </div>
+          </div>
+          <div class="hero-image"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about" id="about">
+        <h1>About Me</h1>
+        <div class="flex-container">
+          <div class="about-image reveal"></div>
+          <div class="about-text reveal">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
+              excepturi ipsa est ipsam fuga. Reprehenderit doloribus placeat,
+              quos sapiente, consequatur quibusdam in autem amet labore illum
+              ipsum alias? Labore, voluptatum!
+            </p>
+            <button
+              type="submit"
+              onclick="window.open('/doc/Elijah_Igbokah_Tech_CV.pdf')"
+            >
+              Download CV
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <h1>My Skills</h1>
+        <div class="flex-container">
+          <div class="skill-grid reveal">
+            <div class="skill-grid-column">
+              <h2>Technical Skills</h2>
+              <div class="skill-item">
+                <label for="expertise">HTML5</label>
+                <progress id="expertise" value="100" max="100">100%</progress>
+              </div>
+              <div class="skill-item">
+                <label for="expertise">CSS</label>
+                <progress id="expertise" value="60" max="100">60%</progress>
+              </div>
+              <div class="skill-item">
+                <label for="expertise">Javascript</label>
+                <progress id="expertise" value="50" max="100">50%</progress>
+              </div>
+              <div class="skill-item">
+                <label for="expertise">React JS</label>
+                <progress id="expertise" value="60" max="100">60%</progress>
+              </div>
+              <div class="skill-item">
+                <label for="expertise">SASS</label>
+                <progress id="expertise" value="70" max="100">70%</progress>
+              </div>
+              <div class="skill-item">
+                <label for="expertise">Python</label>
+                <progress id="expertise" value="50" max="100">50%</progress>
+              </div>
+              <div class="skill-item">
+                <label for="expertise">Wordpress</label>
+                <progress id="expertise" value="70" max="100">100%</progress>
+              </div>
+            </div>
+            <div class="skill-grid-column">
+              <h2>Interpersonal Skills</h2>
+              <div class="skill-item">
+                <label for="expertise">Communication Skills</label>
+                <progress id="expertise" value="100" max="100">100%</progress>
+              </div>
+              <div class="skill-item">
+                <label for="expertise">Teamwork</label>
+                <progress id="expertise" value="100" max="100">100%</progress>
+              </div>
+              <div class="skill-item">
+                <label for="expertise">Collaboration</label>
+                <progress id="expertise" value="100" max="100">100%</progress>
+              </div>
+              <div class="skill-item">
+                <label for="expertise">Creativity</label>
+                <progress id="expertise" value="100" max="100">100%</progress>
+              </div>
+              <div class="skill-item">
+                <label for="expertise">Adaptability</label>
+                <progress id="expertise" value="100" max="100">100%</progress>
+              </div>
+              <div class="skill-item">
+                <label for="expertise">Leadership</label>
+                <progress id="expertise" value="100" max="100">100%</progress>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio reveal" id="portfolio">
+        <h1>My Portfolio</h1>
+        <div class="portfolio-flex">
+          <a
+            class="portfolio-item"
+            id="kuda"
+            href="https://eljay-kuda.netlify.app"
+          ></a>
+          <a
+            class="portfolio-item"
+            id="paystack"
+            href="https://paystack-landing-page.netlify.app"
+          ></a>
+          <a
+            class="portfolio-item"
+            id="delizioso"
+            href="https://wondrous-salamander-a228d7.netlify.app"
+          >
+          </a>
+          <a
+            class="portfolio-item"
+            id="metabnb"
+            href="https://metabnb-eljay.netlify.app"
+          >
+          </a>
+
+          <a
+            class="portfolio-item"
+            id="crappo"
+            href="https://crappo-project.netlify.app"
+          ></a>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
