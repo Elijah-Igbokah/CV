@@ -545,6 +545,10 @@ progress{
         height: 300px;
     }
 
+    .about, .skills{
+        position: relative;
+    }
+
     .about > .flex-container{
         flex-direction: column;
         justify-content: center;
